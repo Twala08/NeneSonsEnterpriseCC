@@ -157,7 +157,7 @@ export default function App() {
               className="relative"
             >
               <img
-                src="/images/about.jpg"
+                src="/images/Painting wall.jpg"
                 alt="Our Team at Work"
                 className="rounded-2xl shadow-2xl"
                 loading="lazy"
