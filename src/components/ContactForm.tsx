@@ -12,7 +12,7 @@ const ContactForm = () => {
     name: '',
     email: '',
     phone: '',
-    service: 'Blinds',
+    service: 'Window Blinds',
     message: ''
   });
 
@@ -32,7 +32,7 @@ const ContactForm = () => {
         setIsSending(false);
         setIsSubmitted(true);
         setTimeout(() => setIsSubmitted(false), 5000);
-        setFormData({ name: '', email: '', phone: '', service: 'Blinds', message: '' });
+        setFormData({ name: '', email: '', phone: '', service: 'Window Blinds', message: '' });
       }, 1500);
       return;
     }
@@ -42,12 +42,9 @@ const ContactForm = () => {
         serviceId,
         templateId,
         {
-          from_name: formData.name,
-          from_email: formData.email,
-          phone_number: formData.phone,
-          service_requested: formData.service,
-          message: formData.message,
-          to_email: 'nenesons@gmail.com',
+          user_name: formData.name,
+          user_email: formData.email,
+          message: `Phone: ${formData.phone}\nService Requested: ${formData.service}\n\n${formData.message}`,
         },
         publicKey
       );
@@ -55,7 +52,7 @@ const ContactForm = () => {
       setIsSending(false);
       setIsSubmitted(true);
       setTimeout(() => setIsSubmitted(false), 5000);
-      setFormData({ name: '', email: '', phone: '', service: 'Blinds', message: '' });
+      setFormData({ name: '', email: '', phone: '', service: 'Window Blinds', message: '' });
     } catch (err) {
       console.error('Failed to send email:', err);
       setError('Failed to send message. Please try again or call us directly.');
@@ -64,16 +61,10 @@ const ContactForm = () => {
   };
 
   const services = [
-    'Blinds',
-    'Curtains',
-    'Curtain Rails',
-    'Shadeports',
+    'Window Blinds',
+    'Shutters',
     'Wooden Flooring',
-    'Aluminium Windows',
-    'Painting',
-    'Access Control',
-    'Garage Motors',
-    'Glazing'
+    'Sliding Burglar Guards'
   ];
 
   return (

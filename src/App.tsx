@@ -2,15 +2,9 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { 
   Blinds, 
-  Car, 
   LayoutGrid, 
-  Square, 
-  PaintBucket, 
-  ShieldCheck, 
-  Settings, 
-  GlassWater,
-  Scissors,
-  GripHorizontal,
+  ShieldCheck,
+  DoorOpen,
   CheckCircle2,
   Star,
   Quote
@@ -33,12 +27,12 @@ const services: Service[] = [
     image: '/images/Blinds.jpg'
   },
   {
-    id: 'shadeports',
-    title: 'Shadeports (Carports)',
-    description: 'Protect your vehicles from the harsh South African sun with our high-quality shadeports and custom carports.',
-    benefits: ['UV protection', 'Durable structure', 'Custom sizes', 'Professional setup'],
-    icon: Car,
-    image: '/images/shadeports.webp'
+    id: 'shutters',
+    title: 'Shutters',
+    description: 'Premium quality shutters for your home or business. Elegant, durable and custom fitted.',
+    benefits: ['Custom fitting', 'Light control', 'Privacy & security', 'Long-lasting quality'],
+    icon: ShieldCheck,
+    image: '/images/shutter-blinds.jpeg'
   },
   {
     id: 'flooring',
@@ -46,64 +40,80 @@ const services: Service[] = [
     description: 'Transform your home with elegant wooden flooring. We specialize in laminate and solid wood installation.',
     benefits: ['Easy maintenance', 'Elegant finish', 'Professional leveling', 'Long-lasting quality'],
     icon: LayoutGrid,
-    image: '/images/Laminate flooring.jpeg'
+    image: '/images/laminate-flooring.jpeg'
   },
   {
-    id: 'aluminium',
-    title: 'Aluminium Windows',
-    description: 'Modern, sleek, and durable aluminium window frames for both residential and commercial properties.',
-    benefits: ['Weather resistant', 'Low maintenance', 'Modern aesthetic', 'Energy efficient'],
-    icon: Square,
-    image: '/images/Aluminium Window.png'
+    id: 'sliding-burglar',
+    title: 'Sliding Burglar Guards',
+    description: 'Keep your home and business secure with our professionally installed sliding burglar guards.',
+    benefits: ['High-grade steel', 'Custom sizing', 'Smooth operation', 'Professional installation'],
+    icon: DoorOpen,
+    image: '/images/Blinds.jpg'
   },
-  {
-    id: 'painting',
-    title: 'Interior & Exterior Painting',
-    description: 'Professional painting services to give your property a fresh, new look. We use high-quality, long-lasting paints.',
-    benefits: ['Surface preparation', 'Premium paint brands', 'Clean workmanship', 'Color consultation'],
-    icon: PaintBucket,
-    image: '/images/Painting.webp'
-  },
-  {
-    id: 'access-control',
-    title: 'Access Control Systems',
-    description: 'Enhance your security with our state-of-the-art access control systems for homes and businesses.',
-    benefits: ['Intercom systems', 'Keypad entry', 'Biometric options', 'Remote monitoring'],
-    icon: ShieldCheck,
-    image: '/images/Access control.avif' // Original: https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&q=80&w=800
-  },
-  {
-    id: 'garage-motors',
-    title: 'Garage Motors',
-    description: 'Installation and repair of high-quality garage door motors for convenience and security.',
-    benefits: ['Smooth operation', 'Battery backup', 'Remote access', 'Safety sensors'],
-    icon: Settings,
-    image: '/images/Garage Motors.png'
-  },
-  {
-    id: 'glazing',
-    title: 'Glass & Glazing',
-    description: 'Professional glass installation and glazing services for windows, doors, and partitions.',
-    benefits: ['Safety glass', 'Custom cutting', 'Expert fitting', 'Emergency repairs'],
-    icon: GlassWater,
-    image: '/images/Glass and Glazing.jpg'
-  },
-  {
-    id: 'curtains',
-    title: 'Curtains',
-    description: 'Elegant and high-quality curtains tailored to your style. We offer a variety of fabrics and designs.',
-    benefits: ['Custom tailoring', 'Wide fabric selection', 'Professional fitting', 'Blackout & decorative options'],
-    icon: Scissors,
-    image: '/images/Curtains.jpg'
-  },
-  {
-    id: 'curtain-rails',
-    title: 'Curtain Rails',
-    description: 'Durable and stylish curtain rails and rods to complement your window treatments.',
-    benefits: ['Heavy-duty rails', 'Decorative rods', 'Smooth operation', 'Expert installation'],
-    icon: GripHorizontal,
-    image: '/images/Curtain rod.jpg'
-  }
+  // {
+  //   id: 'shadeports',
+  //   title: 'Shadeports (Carports)',
+  //   description: 'Protect your vehicles from the harsh South African sun with our high-quality shadeports and custom carports.',
+  //   benefits: ['UV protection', 'Durable structure', 'Custom sizes', 'Professional setup'],
+  //   icon: Car,
+  //   image: '/images/shadeports.webp'
+  // },
+  // {
+  //   id: 'aluminium',
+  //   title: 'Aluminium Windows',
+  //   description: 'Modern, sleek, and durable aluminium window frames for both residential and commercial properties.',
+  //   benefits: ['Weather resistant', 'Low maintenance', 'Modern aesthetic', 'Energy efficient'],
+  //   icon: Square,
+  //   image: '/images/aluminium-window.png'
+  // },
+  // {
+  //   id: 'painting',
+  //   title: 'Interior & Exterior Painting',
+  //   description: 'Professional painting services to give your property a fresh, new look. We use high-quality, long-lasting paints.',
+  //   benefits: ['Surface preparation', 'Premium paint brands', 'Clean workmanship', 'Color consultation'],
+  //   icon: PaintBucket,
+  //   image: '/images/Painting.webp'
+  // },
+  // {
+  //   id: 'access-control',
+  //   title: 'Access Control Systems',
+  //   description: 'Enhance your security with our state-of-the-art access control systems for homes and businesses.',
+  //   benefits: ['Intercom systems', 'Keypad entry', 'Biometric options', 'Remote monitoring'],
+  //   icon: ShieldCheck,
+  //   image: '/images/access-control.avif'
+  // },
+  // {
+  //   id: 'garage-motors',
+  //   title: 'Garage Motors',
+  //   description: 'Installation and repair of high-quality garage door motors for convenience and security.',
+  //   benefits: ['Smooth operation', 'Battery backup', 'Remote access', 'Safety sensors'],
+  //   icon: Settings,
+  //   image: '/images/garage-motors.png'
+  // },
+  // {
+  //   id: 'glazing',
+  //   title: 'Glass & Glazing',
+  //   description: 'Professional glass installation and glazing services for windows, doors, and partitions.',
+  //   benefits: ['Safety glass', 'Custom cutting', 'Expert fitting', 'Emergency repairs'],
+  //   icon: GlassWater,
+  //   image: '/images/glass-and-glazing.jpg'
+  // },
+  // {
+  //   id: 'curtains',
+  //   title: 'Curtains',
+  //   description: 'Elegant and high-quality curtains tailored to your style. We offer a variety of fabrics and designs.',
+  //   benefits: ['Custom tailoring', 'Wide fabric selection', 'Professional fitting', 'Blackout & decorative options'],
+  //   icon: Scissors,
+  //   image: '/images/Curtains.jpg'
+  // },
+  // {
+  //   id: 'curtain-rails',
+  //   title: 'Curtain Rails',
+  //   description: 'Durable and stylish curtain rails and rods to complement your window treatments.',
+  //   benefits: ['Heavy-duty rails', 'Decorative rods', 'Smooth operation', 'Expert installation'],
+  //   icon: GripHorizontal,
+  //   image: '/images/curtain-rod.jpg'
+  // }
 ];
 
 const testimonials: Testimonial[] = [
@@ -131,12 +141,12 @@ const testimonials: Testimonial[] = [
 ];
 
 const galleryItems: GalleryItem[] = [
-  { id: '1', title: 'Shutter Blinds', category: 'Blinds', image: '/images/Shutter Blinds.jpeg' },
-  { id: '2', title: 'Double Shadeport', category: 'Shadeports', image: '/images/shadeports.webp' },
-  { id: '3', title: 'Laminate Flooring', category: 'Flooring', image: '/images/Laminate flooring.jpeg' },
-  { id: '4', title: 'Aluminium Window Frame', category: 'Aluminium', image: '/images/Aluminium Window.png' },
-  { id: '5', title: 'Exterior Painting Project', category: 'Painting', image: '/images/Painting wall.jpg' },
-  { id: '6', title: 'Access Control Setup', category: 'Security', image: '/images/Access control.avif' },
+  { id: '1', title: 'Shutter Blinds', category: 'Blinds', image: '/images/shutter-blinds.jpeg' },
+  { id: '2', title: 'Window Blinds', category: 'Blinds', image: '/images/Blinds.jpg' },
+  { id: '3', title: 'Laminate Flooring', category: 'Flooring', image: '/images/laminate-flooring.jpeg' },
+  { id: '4', title: 'Wooden Flooring', category: 'Flooring', image: '/images/wooden-floor.jpg' },
+  { id: '5', title: 'Sliding Burglar Guards', category: 'Security', image: '/images/Blinds.jpg' },
+  { id: '6', title: 'Shutters', category: 'Shutters', image: '/images/shutter-blinds.jpeg' },
 ];
 
 export default function App() {
@@ -157,7 +167,7 @@ export default function App() {
               className="relative"
             >
               <img
-                src="/images/Painting wall.jpg"
+                src="/images/Flat_Shutters.jpeg"
                 alt="Our Team at Work"
                 className="rounded-2xl shadow-2xl"
                 loading="lazy"

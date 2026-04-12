@@ -4,29 +4,24 @@ import { motion, AnimatePresence } from 'motion/react';
 
 const carouselImages = [
   {
-    url: '/images/Painting.webp',
-    title: 'Quality Craftsmanship',
-    subtitle: 'For Your Home & Business'
-  },
-  {
     url: '/images/Blinds.jpg',
     title: 'Premium Window Blinds',
     subtitle: 'Elegant & Functional Designs'
   },
   {
-    url: '/images/wooden-floor.jpg',
+    url: '/images/shutter-blinds.jpeg',
+    title: 'Shutters',
+    subtitle: 'Style Meets Security'
+  },
+  {
+    url: '/images/laminate-flooring.jpeg',
     title: 'Wooden Flooring',
     subtitle: 'Transform Your Living Space'
   },
   {
-    url: '/images/shadeports.webp',
-    title: 'Durable Shadeports',
-    subtitle: 'Protection from the Elements'
-  },
-  {
-    url: '/images/Curtains.jpg',
-    title: 'Custom Curtains',
-    subtitle: 'Tailored to Your Style'
+    url: '/images/Aluminium Window.png',
+    title: 'Sliding Burglar Guards',
+    subtitle: 'Keeping Your Home Safe'
   }
 ];
 
