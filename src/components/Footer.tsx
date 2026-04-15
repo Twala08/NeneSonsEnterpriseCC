@@ -44,15 +44,15 @@ const Footer = () => {
               Providing professional home improvement and business services across South Africa. Quality craftsmanship you can trust, nationwide.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              <a href="https://web.facebook.com/people/Nene-Sons-Business-Enterprises-cc/100068996086691/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+              {/* <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
                 <Linkedin className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -73,10 +73,9 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-6">Our Services</h4>
             <ul className="space-y-4 text-gray-400">
               <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Window Blinds</a></li>
-              <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Shadeports</a></li>
+              <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Shutters</a></li>
               <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Wooden Flooring</a></li>
-              <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Aluminium Windows</a></li>
-              <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Security Systems</a></li>
+              <li><a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="hover:text-primary transition-colors">Sliding Burglar Guards</a></li>
             </ul>
           </div>
 

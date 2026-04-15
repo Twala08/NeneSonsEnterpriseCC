@@ -17,7 +17,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       className="service-card group"
     >
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-48 overflow-hidden">
         <img
           src={service.image}
           alt={service.title}
@@ -33,7 +33,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, index }) => {
         <h3 className="text-xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors">
           {service.title}
         </h3>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+        <p className="text-gray-600 text-sm mb-4">
           {service.description}
         </p>
         <div className="space-y-2 mb-6">

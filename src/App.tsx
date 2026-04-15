@@ -21,7 +21,7 @@ const services: Service[] = [
   {
     id: 'blinds',
     title: 'Window Blinds',
-    description: 'Our core service. We offer a wide range of premium window blinds including Venetian, Roller, Vertical, and Roman blinds.',
+    description: 'Premium window blinds including Venetian, Roller, Vertical and Roman styles. Custom fitted for your space.',
     benefits: ['Custom measurements', 'Professional installation', 'Wide variety of materials', 'Durable and stylish'],
     icon: Blinds,
     image: '/images/Blinds.jpg'
@@ -37,7 +37,7 @@ const services: Service[] = [
   {
     id: 'flooring',
     title: 'Wooden Flooring',
-    description: 'Transform your home with elegant wooden flooring. We specialize in laminate and solid wood installation.',
+    description: 'Elegant laminate and solid wood flooring installation. Transform your space with a professional finish.',
     benefits: ['Easy maintenance', 'Elegant finish', 'Professional leveling', 'Long-lasting quality'],
     icon: LayoutGrid,
     image: '/images/laminate-flooring.jpeg'
@@ -45,10 +45,10 @@ const services: Service[] = [
   {
     id: 'sliding-burglar',
     title: 'Sliding Burglar Guards',
-    description: 'Keep your home and business secure with our professionally installed sliding burglar guards.',
+    description: 'Professionally installed sliding burglar guards. High-grade steel, custom sized for your home or business.',
     benefits: ['High-grade steel', 'Custom sizing', 'Smooth operation', 'Professional installation'],
     icon: DoorOpen,
-    image: '/images/Blinds.jpg'
+    image: '/images/sliding_bargler.webp'
   },
   // {
   //   id: 'shadeports',
@@ -119,33 +119,33 @@ const services: Service[] = [
 const testimonials: Testimonial[] = [
   {
     id: '1',
-    name: 'Sipho Mdluli',
-    role: 'Homeowner in Tembisa',
-    content: 'Nene & Sons installed blinds in my entire house. The quality is exceptional and the team was very professional. Highly recommended!',
+    name: 'Bukelwa',
+    role: 'Homeowner at Glen Eagle Estate',
+    content: 'Nene & Sons installed shutters throughout my home and the results are stunning. The quality is exceptional, the fitting was perfect and the team was professional from start to finish. I could not be happier!',
     rating: 5
   },
   {
     id: '2',
-    name: 'Sarah Jenkins',
-    role: 'Business Owner',
-    content: 'We used them for our office flooring and aluminium windows. Great attention to detail and they finished ahead of schedule.',
+    name: 'Mr Dladla',
+    role: 'Homeowner at Hyderwyk Estate Carnival',
+    content: 'The window blinds installed by Nene & Sons have completely transformed my home. Clean, precise installation and the finish is top quality. The team was punctual, respectful and left everything spotless. Highly recommended!',
     rating: 5
   },
   {
     id: '3',
-    name: 'Thabo Ndlovu',
-    role: 'Contractor',
-    content: 'Reliable partners for my construction projects. Their shadeports and garage motors are top-notch.',
-    rating: 4
+    name: 'Dr. Mphahlele',
+    role: 'Homeowner at Savanna Hill Estate',
+    content: 'I had Allusion blinds installed by Nene & Sons and the elegance they bring to my home is beyond what I expected. The attention to detail, the quality of the product and the professionalism of the team is world class. A truly premium experience from start to finish.',
+    rating: 5
   }
 ];
 
 const galleryItems: GalleryItem[] = [
-  { id: '1', title: 'Shutter Blinds', category: 'Blinds', image: '/images/shutter-blinds.jpeg' },
+  { id: '1', title: 'Vertical Blinds', category: 'Blinds', image: '/images/vertical-blinds.jpeg' },
   { id: '2', title: 'Window Blinds', category: 'Blinds', image: '/images/Blinds.jpg' },
   { id: '3', title: 'Laminate Flooring', category: 'Flooring', image: '/images/laminate-flooring.jpeg' },
   { id: '4', title: 'Wooden Flooring', category: 'Flooring', image: '/images/wooden-floor.jpg' },
-  { id: '5', title: 'Sliding Burglar Guards', category: 'Security', image: '/images/Blinds.jpg' },
+  { id: '5', title: 'Sliding Burglar Guards', category: 'Security', image: '/images/sliding_bargler.webp' },
   { id: '6', title: 'Shutters', category: 'Shutters', image: '/images/shutter-blinds.jpeg' },
 ];
 
@@ -167,7 +167,7 @@ export default function App() {
               className="relative"
             >
               <img
-                src="/images/Flat_Shutters.jpeg"
+                src="/images/Allusion_Blinds.jpg"
                 alt="Our Team at Work"
                 className="rounded-2xl shadow-2xl"
                 loading="lazy"

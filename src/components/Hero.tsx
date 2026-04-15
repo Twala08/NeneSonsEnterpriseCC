@@ -19,7 +19,7 @@ const carouselImages = [
     subtitle: 'Transform Your Living Space'
   },
   {
-    url: '/images/Aluminium Window.png',
+    url: '/images/sliding_bargler.webp',
     title: 'Sliding Burglar Guards',
     subtitle: 'Keeping Your Home Safe'
   }
@@ -51,7 +51,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen h-screen flex flex-col overflow-hidden isolate">
+      {/* Navbar spacer */}
+      <div className="shrink-0" style={{ height: '104px' }}></div>
       {/* Background Carousel */}
       <div className="absolute inset-0 z-0">
         <AnimatePresence mode="sync">
@@ -75,38 +77,38 @@ const Hero = () => {
         </AnimatePresence>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex-1 flex items-center">
         <div className="max-w-3xl">
           <AnimatePresence mode="sync">
           <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="inline-flex items-center space-x-2 bg-primary/20 backdrop-blur-md text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-6 border border-primary/30">
+            <div className="inline-flex items-center space-x-2 bg-primary/20 backdrop-blur-md text-primary px-4 py-1.5 rounded-full text-sm font-semibold mb-4 border border-primary/30">
               <CheckCircle2 className="w-4 h-4" />
               <span className="text-white">Trusted Professionals Nationwide</span>
             </div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
               {carouselImages[currentIndex].title} <span className="text-primary block">{carouselImages[currentIndex].subtitle}</span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl leading-relaxed">
+            <p className="text-base md:text-lg text-gray-200 mb-6 max-w-xl leading-relaxed">
               Nene & Sons Enterprise CC delivers top-tier home improvement and business services across South Africa. Quality craftsmanship you can trust.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#contact" className="btn-primary text-lg px-8 py-4">
+              <a href="#contact" className="btn-primary text-base px-8 py-3">
                 Request a Quote
                 <ArrowRight className="ml-2 w-5 h-5" />
               </a>
-              <a href="tel:0828432791" className="bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all rounded-xl flex items-center justify-center px-8 py-4 text-lg font-semibold">
+              <a href="tel:0828432791" className="bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white/20 transition-all rounded-xl flex items-center justify-center px-8 py-3 text-base font-semibold">
                 <Phone className="mr-2 w-5 h-5" />
                 Call Now
               </a>
             </div>
 
-            <div className="mt-12 grid grid-cols-3 gap-6 border-t border-white/10 pt-8">
+            <div className="mt-6 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
               <div>
                 <div className="text-2xl md:text-3xl font-bold text-white">10+</div>
                 <div className="text-sm text-gray-300">Years Experience</div>
