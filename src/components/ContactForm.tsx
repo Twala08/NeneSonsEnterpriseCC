@@ -64,7 +64,8 @@ const ContactForm = () => {
     'Window Blinds',
     'Shutters',
     'Wooden Flooring',
-    'Sliding Burglar Guards'
+    'Sliding Burglar Guards',
+    'Outdoor Blinds'
   ];
 
   return (

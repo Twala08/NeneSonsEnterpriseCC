@@ -50,6 +50,14 @@ const services: Service[] = [
     icon: DoorOpen,
     image: '/images/sliding_bargler.webp'
   },
+  {
+    id: 'outdoor-blinds',
+    title: 'Outdoor Blinds',
+    description: 'Durable outdoor blinds for patios, entertainment areas and stoeps. Weather resistant and custom fitted.',
+    benefits: ['Weather resistant', 'UV protection', 'Custom sizing', 'Professional installation'],
+    icon: Blinds,
+    image: '/images/outdoor_blinds.jpg'
+  },
   // {
   //   id: 'shadeports',
   //   title: 'Shadeports (Carports)',
